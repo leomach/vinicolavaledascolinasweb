@@ -1,0 +1,322 @@
+/* Hero com imagem de fundo, com sobreposição escura e titulo */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+}
+
+.hero img {
+    opacity: 0.2;
+    width: 100%;
+}
+
+
+.hero .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .title p {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.hero .title h1 {
+    font-size: 7.0em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 5.8rem;
+}
+
+.hero .title .colinas {
+    font-size: 7.7rem;
+}
+
+/* Nosso Funcionamento */
+.nosso-funcionamento {
+    background-color: #3D0000;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+    height: 700px;
+}
+
+.nosso-funcionamento img {
+    height: 90%;
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nosso-funcionamento .text {
+    width: 35%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nosso-funcionamento .text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #DBB579;
+}
+
+.nosso-funcionamento .text li {
+    margin-left: 30px;
+}
+
+.nosso-funcionamento .text a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3D0000;
+    background-color: #DBB579;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.nosso-funcionamento .text a:hover {
+    opacity: 0.9;
+}
+
+/* Feedbacks */
+.feedbacks {
+    background-color: #dbb67958;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #3D0000;
+    height: 700px;
+}
+
+.feedbacks .col {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    opacity: 1;
+}
+
+.feedbacks .col .feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.feedbacks .col .feedback span {
+    font-weight: bold;
+}
+
+/* Nossos Rótulos */
+.labels {
+    background-color: #3D0000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #DBB579;
+    height: 800px;
+    gap: 40px;
+}
+
+.labels img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.labels .title {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.labels .title h2 {
+    font-size: 5.5em;
+    text-transform: uppercase;
+    line-height: 5rem;
+    color: #DBB579;
+}
+
+.labels .title ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.labels .title ul li {
+    margin-left: 30px;
+}
+
+.labels .title a {
+    text-decoration: none;
+    color: #3D0000;
+    background-color: #DBB579;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.labels .title a:hover {
+    opacity: 0.9;
+}
+
+
+/* Versão mobile */
+@media only screen and (max-width: 800px) {
+    /* Hero */
+    .hero {
+        height: 600px;
+    }
+
+    .hero img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero .title p {
+        font-size: 1.2em;
+    }
+
+    .hero .title h1 {
+        font-size: 3.9em;
+        line-height: 3.8rem;
+    }
+
+    .hero .title .colinas {
+        font-size: 4.3rem;
+    }
+
+    /* Nosso Funcionamento */
+    .nosso-funcionamento {
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    .nosso-funcionamento img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .nosso-funcionamento .text {
+        width: 100%;
+        height: 100%;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .nosso-funcionamento .text h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+        color: #DBB579;
+    }
+
+    /* Feedbacks */
+    .feedbacks {
+        flex-direction: column;
+        height: fit-content;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .feedbacks .col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        opacity: 1;
+    }
+
+    .feedbacks .col .feedback {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* Nossos Rótulos */
+    .labels {
+        flex-direction: column;
+        height: fit-content;
+        gap: 30px;
+    }
+
+    .labels img {
+        height: 700px;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .labels .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 20px 30px;
+    }
+
+    .labels .title h2 {
+        font-size: 4em;
+        text-transform: uppercase;
+        line-height: 4rem;
+    }
+
+    .labels .title ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .labels .title a {
+        text-decoration: none;
+        color: #3D0000;
+        background-color: #DBB579;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .labels .title a:hover {
+        opacity: 0.9;
+    }
+
+}
