@@ -27,13 +27,14 @@ main {
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.7em;
     text-align: start;
+    margin-bottom: 5px;
 }
 
 .hero h1 {
     text-transform: uppercase;
-    font-size: 5.9em;
+    font-size: 7.9em;
     line-height: 5.8rem;
 }
 
@@ -189,6 +190,10 @@ main {
     .hero h1 {
         font-size: 3.9em;
         line-height: 3.8rem;
+    }
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 0;
     }
 
     .container-wine {
