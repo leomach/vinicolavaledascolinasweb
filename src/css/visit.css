@@ -10,10 +10,10 @@ main {
 .hero {
     background-color: #dbb67958;
     width: 100%;
-    height: 300px;
+    height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: start;
     color: #3D0000;
@@ -34,7 +34,7 @@ main {
 
 .hero h1 {
     text-transform: uppercase;
-    font-size: 7.9em;
+    font-size: 4.5em;
     line-height: 5.8rem;
 }
 
@@ -43,18 +43,18 @@ main {
 .description {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
-    height: 800px;
     width: 100%;
-    padding: 50px 20px;
+    padding: 20px 20px 100px 20px;
+    gap: 30px;
     background-color: #dbb67958;
     color: #3D0000;
 }
 
 .description img {
-    width: 50%;
+    width: 30%;
     height: auto;
     object-fit: cover;
     object-position: bottom;
@@ -83,61 +83,25 @@ main {
     width: 45%;
 }
 
-.visit-options {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    width: 100%;
-    padding: 50px 20px;
-    background-color: #dbb67958;
+.description a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DBB579;
     color: #3D0000;
-}
-
-.visit-options a {
     text-decoration: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #3D0000;
-}
-
-.visit-options hr {
-    width: 80%;
-    height: 1px;
-    background-color: #3D0000;
-    border: none;
-}
-
-.visit-options .option {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.visit-options .option h4 {
-    font-size: 1.4rem;
-    width: 45%;
-    text-align: left;
+    font-size: 0.9rem;
     text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+.description a:hover {
+    background-color: #c9a55a;
 }
 
-.visit-options .option .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 45%;
-    gap: 20px;
-    font-size: 1.4rem;
-    color: #3D0000;
+.map {
+    width: 100%;
+    height: 600px;
 }
 
 
