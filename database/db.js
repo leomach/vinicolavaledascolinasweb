@@ -22,8 +22,16 @@ async function newTable() {
             harmonization TEXT
         )
     `);
+    await db.exec(`
+        CREATE TABLE IF NOT EXISTS visits (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT,
+            includesHtml TEXT,
+            description TEXT
+        )
+    `);
 }
 
 newTable().then(() => {
-    console.log("Tabela criada com sucesso");
+    console.log("Tabelas criadas com sucesso");
 });
