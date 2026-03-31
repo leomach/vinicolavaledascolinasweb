@@ -5,14 +5,13 @@ async function loadVisits() {
         const response = await fetch('http://localhost:3000/api/visits');
         const visits = await response.json();
 
-        // Clear existing content (except the first hr which might be stylistic, but better to clear all and rebuild)
         visitsContainer.innerHTML = '';
 
         visits.forEach(visit => {
             const hr = document.createElement('hr');
             
             const anchor = document.createElement('a');
-            anchor.href = `./visit.html?id=${visit.id}`; // Generic detail page
+            anchor.href = `./visit.html?id=${visit.id}`;
 
             const divOption = document.createElement('div');
             divOption.className = 'option';
@@ -32,7 +31,6 @@ async function loadVisits() {
             visitsContainer.appendChild(anchor);
         });
         
-        // Add final hr
         const finalHr = document.createElement('hr');
         visitsContainer.appendChild(finalHr);
 

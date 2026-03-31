@@ -3,7 +3,7 @@ import { dbPromise } from "./db.js";
 const wines = [
     {
         name: "Cabana do Vale Reserva",
-        imageUrl: "../src/img/photos/VinhosValeDasColinas-3607.jpg",
+        imageUrl: "../src/img/photos/VinhosValeDasColinas-3607.webp",
         location: "Garanhuns, PE - Brasil",
         temperature: "16ºC a 18ºC",
         type: "Vinho Nobre Tinto Seco",
@@ -14,7 +14,7 @@ const wines = [
     },
     {
         name: "Cabana do Vale",
-        imageUrl: "../src/img/photos/VinhosValeDasColinas-3607.jpg",
+        imageUrl: "../src/img/photos/VinhosValeDasColinas-3607.webp",
         location: "Garanhuns, PE - Brasil",
         temperature: "16ºC a 18ºC",
         type: "Vinho Nobre Tinto Seco",
@@ -25,7 +25,7 @@ const wines = [
     },
     {
         name: "DONA ELISA",
-        imageUrl: "../src/img/photos/vale05-2025-0186.jpg",
+        imageUrl: "../src/img/photos/vale05-2025-0186.webp",
         location: "Garanhuns, PE - Brasil",
         temperature: "16ºC a 18ºC",
         type: "Vinho Nobre Tinto Seco",
@@ -36,7 +36,7 @@ const wines = [
     },
     {
         name: "DONA CECÍLIA",
-        imageUrl: "../src/img/photos/vale05-2025-0189.jpg",
+        imageUrl: "../src/img/photos/vale05-2025-0189.webp",
         location: "Garanhuns, PE - Brasil",
         temperature: "6ºC a 8ºC",
         type: "Vinho Fino Branco Seco",
@@ -47,7 +47,7 @@ const wines = [
     },
     {
         name: "CIRANDA",
-        imageUrl: "../src/img/photos/vale05-2025-0185.jpg",
+        imageUrl: "../src/img/photos/vale05-2025-0185.webp",
         location: "Garanhuns, PE - Brasil",
         temperature: "6ºC a 8ºC",
         type: "Vinho Fino Branco Seco",
@@ -58,7 +58,7 @@ const wines = [
     },
     {
         name: "CLAIÔ",
-        imageUrl: "../src/img/photos/VinhosValeDasColinas-3591.jpg",
+        imageUrl: "../src/img/photos/VinhosValeDasColinas-3591.webp",
         location: "Garanhuns, PE - Brasil",
         temperature: "16ºC a 18ºC",
         type: "Vinho Nobre Tinto Seco",
